@@ -6,10 +6,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="asd"
+        android:text=""
         android:textSize="100dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/screen"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -19,20 +20,23 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button7" />
+            android:text="7"
+            android:id="@+id/button7"
+            android:onClick="b7"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button8" />
+            android:text="8"
+            android:id="@+id/button8"
+            android:onClick="b8"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button9" />
+            android:id="@+id/button9"
+            android:text="9"
+            android:onClick="b9"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,19 +47,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="4"
+            android:onClick="b4"
             android:id="@+id/button4" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="5"
+            android:onClick="b5"
             android:id="@+id/button5" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="6"
+            android:onClick="b6"
             android:id="@+id/button6" />
     </LinearLayout>
 
@@ -67,20 +74,23 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="1"
+            android:onClick="b1"
+            android:id="@+id/button1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="b2"
             android:id="@+id/button2" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="3"
+            android:onClick="b3"
             android:id="@+id/button3" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button1" />
     </LinearLayout>
 
     <LinearLayout
@@ -92,8 +102,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:text="0"
+            android:onClick="b0"
+            android:id="@+id/button0" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,19 +115,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/buttonplus" />
+            android:text="+"
+            android:onClick="bA"
+            android:id="@+id/buttonA" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/buttonsub" />
+            android:text="-"
+            android:onClick="bS"
+            android:id="@+id/buttonS" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="X"
+            android:onClick="bM"
             android:id="@+id/buttonM" />
 
     </LinearLayout>
@@ -129,7 +143,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="/"
+            android:onClick="bD"
             android:id="@+id/buttonD" />
 
         <Button
@@ -137,7 +152,8 @@
             android:layout_height="wrap_content"
             android:text="="
             android:textSize="50dp"
-            android:id="@+id/buttonEqual" />
+            android:id="@+id/buttonEqual"
+            android:onClick="equal"/>
 
     </LinearLayout>
 
