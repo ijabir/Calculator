@@ -26,4 +26,22 @@ public class MainActivity extends AppCompatActivity {
     {
 
     }
+
+    public void bD(View view)
+    {
+        r=a/b;
+    }
+
+    public void bM(View view)
+    {
+        r=a/b;
+    }
+
+    public void bS(View view)
+    {
+        r=a/b
+    }
+
+    public void bA(View view) {
+    }
 }
