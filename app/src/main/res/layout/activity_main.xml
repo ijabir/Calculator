@@ -105,6 +105,20 @@
             android:text="0"
             android:onClick="b0"
             android:id="@+id/button0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:onClick="bClr"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BC"
+            android:onClick="bBC"
+            android:id="@+id/button10" />
     </LinearLayout>
 
     <LinearLayout
