@@ -7,21 +7,25 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
+
+    int a, b, r, i, j, finalResul, flag;
+    TextView s;
+    String f;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         s = (TextView)findViewById(R.id.screen);
         i=j=0;
         f="";
         r=0;
+        flag=0;
     }
 
-    int a, b, r, i, j, finalResul;
-    TextView s;
-    String f;
 
     public void equal(View view)
     {
@@ -32,12 +36,37 @@ public class MainActivity extends AppCompatActivity {
         else if(r==2) finalResul = a-b;
         else if(r==3) finalResul = a*b;
         else if(r==4) finalResul = a/b;
+        else if(r==5) finalResul = a*b/100;
 
         s.setText(""+finalResul);
+
+        flag=0;
+        f = Integer.toString(finalResul);
+        i=j=f.length();
+    }
+
+    public void bP(View view)
+    {
+        if(flag==1)
+        {
+            s.setText(f.substring(0, i));
+            f=f.substring(0, i);
+        }
+        flag=1;
+        s.append("%");
+        j=i;
+        r=5;
+
     }
 
     public void bD(View view)
     {
+        if(flag==1)
+        {
+            s.setText(f.substring(0, i));
+            f=f.substring(0, i);
+        }
+        flag=1;
         s.append("/");
         j=i;
         r=4;
@@ -45,6 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void bM(View view)
     {
+        if(flag==1)
+        {
+            s.setText(f.substring(0, i));
+            f=f.substring(0, i);
+        }
+        flag=1;
         s.append("*");
         j=i;
         r=3;
@@ -52,6 +87,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void bS(View view)
     {
+        if(flag==1)
+        {
+            s.setText(f.substring(0, i));
+            f=f.substring(0, i);
+        }
+        flag=1;
         s.append("-");
         j=i;
         r=2;
@@ -59,6 +100,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void bA(View view)
     {
+        if(flag==1)
+        {
+            s.setText(f.substring(0, i));
+            f=f.substring(0, i);
+        }
+
+        flag=1;
         s.append("+");
         j=i;
         r=1;
@@ -147,5 +195,6 @@ public class MainActivity extends AppCompatActivity {
         i=j=0;
         f="";
         r=0;
+        flag=0;
     }
 }
